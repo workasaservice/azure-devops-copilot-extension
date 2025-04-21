@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzDoCopilotSK", "AzDoCopilotSK.csproj", "{326D11D6-AD77-4F10-B6DA-04AC471B3772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzDoCopilotSK.UnitTests", "..\AzDoCopilotSK.UnitTests\AzDoCopilotSK.UnitTests.csproj", "{C68C8B4D-F2E2-4BAA-913A-2BA7658A6A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{326D11D6-AD77-4F10-B6DA-04AC471B3772}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326D11D6-AD77-4F10-B6DA-04AC471B3772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326D11D6-AD77-4F10-B6DA-04AC471B3772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68C8B4D-F2E2-4BAA-913A-2BA7658A6A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68C8B4D-F2E2-4BAA-913A-2BA7658A6A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68C8B4D-F2E2-4BAA-913A-2BA7658A6A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68C8B4D-F2E2-4BAA-913A-2BA7658A6A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

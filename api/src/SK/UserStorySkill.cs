@@ -42,5 +42,29 @@ namespace AzDoCopilotSK.SK
 
             return userStory;
         }
+
+        public async Task<bool> DeleteUserStory(Guid id)
+        {
+            var deleteUserStoryPrompt = _promptsFactory.GetTestCasePrompt();
+
+            var context = new KernelArguments
+            {
+                { "UserStoryId", id.ToString() }
+            };
+
+            var result = await deleteUserStoryPrompt.InvokeAsync(_kernel, context);
+
+            if (!result.ToString().IsValidJson())
+            {
+                throw new Exception("Invalid prompt result, not valid json");
+            }
+
+            var deleteResult = JsonSerializer.Deserialize<Dictionary<string, bool>>(result.ToString(), new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
+
+            return deleteResult != null && deleteResult.TryGetValue("success", out var isSuccess) && isSuccess;
+        }
     }
 }

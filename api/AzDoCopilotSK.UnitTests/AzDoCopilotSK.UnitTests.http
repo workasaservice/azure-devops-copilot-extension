@@ -1,0 +1,6 @@
+@AzDoCopilotSK.UnitTests_HostAddress = http://localhost:5177
+
+GET {{AzDoCopilotSK.UnitTests_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
